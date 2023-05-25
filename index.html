@@ -5,34 +5,84 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Portfólio - Vitor Marra Hernandes</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class="preto">
-		<div class="mensagem">Olá, me chamo Vitor Marra Hernandes e bem-vindo(a) ao meu portfólio.</div>
-	</div>
-	<div class="titulo">
-		<p>CARDEX</p>
-	</div>
-	<div class="imagem1">
-		<div class="conteudo1">Uma mini enciclopédia de alguns carros históricos, mostrando suas principais características e uma breve explicação do motivo de seus respectivos status<br><br><a href="">Cardex</a></div>
-	</div>
-	<div class="titulo">
-		<p>[TÍTULO DO PROJETO]</p>
-	</div>
-	<div class="imagem2">
-		<div class="conteudo2">[RESUMO SIMPLES DO QUE O PROJETO É] [EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO]<br><a href="">[LINK DO PROJETO]</a></div>
-	</div>
-	<div class="titulo">
-		<p>[TÍTULO DO PROJETO]</p>
-	</div>
-	<div class="imagem3">
-		<div class="conteudo3">[RESUMO SIMPLES DO QUE O PROJETO É] [EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO]<br><a href="">[LINK DO PROJETO]</a></div>
-	</div>
-	<div class="titulo">
-		<p>[TÍTULO DO PROJETO]</p>
-	</div>
-	<div class="imagem4">
-		<div class="conteudo4">[RESUMO SIMPLES DO QUE O PROJETO É] [EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO][EXEMPLO]<br><a href="">[LINK DO PROJETO]</a></div>
-	</div>
+	<!-- Header -->
+	<header class="header" id="myHeader">
+		<button href=""><span style="color: var(--roxo); letter-spacing: -1px;">VMH</span></button>
+		<nav>
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">Sobre</a></li>
+				<li><a href="">Habilidades</a></li>
+				<li><a href="">Projetos</a></li>
+				<li><a href="">Contato</a></li>
+			</ul>
+		</nav>
+	</header>	
+
+	<!-- Main -->
+	<main>
+		<div class="div1-main">
+			<h1>Olá, me chamo <span style="color: var(--roxo);">Vitor Marra Hernandes</span> e sou um <span style="color: var(--roxo);">Desenvolvedor Front-End</span></h1>
+		</div>
+		<div class="div2-main">
+			<img src="assets/images/monitor.png">
+		</div>
+	</main>
+
+	<!-- Sobre -->
+	<section class="sobre">
+		<h1 style="color: var(--roxo);">Sobre mim</h1>
+			<div class="parent">
+				<div class="div1-sobre"><img src="assets/images/eu.jpg" style="height: 300px;"></div>
+				<div class="div2-sobre">
+					<p>
+						Meu nome é Vitor Marra Hernandes, um desenvolvedor web apaixonado pela tecnologia e que está em busca da primeira oportunidade na área. Sou estudante do Bacharelado em Ciência e Tecnologia na UFABC e estou estudando sobre desenvolvimento front-end de forma autônoma desde agosto de 2022, quando decidi que essa seria a carreira que gostaria de seguir. Sou extremamente motivado e estou sempre em busca de aprender coisas novas e aperfeiçoar o que já sei.
+					</p><br>
+					<h3>Habilidades</h3>
+					<ul>
+						<li><img src="assets/images/html5.svg">HTML5</li>
+						<li><img src="assets/images/css3.svg">CSS3</li>
+						<li><img src="assets/images/javascript.svg">JavaScript</li>
+						<li><img src="assets/images/react.svg">React</li>
+						<li><img src="assets/images/responsivo.svg">Design Responsivo</li>
+						<li><img src="assets/images/acessibilidade.svg">Acessibilidade e SEO</li>
+					</ul>
+				</div>
+				<div class="div3-sobre">
+					<h3>Contato</h3>
+					<a href="curriculo.pdf" download="Currículo - Vitor Marra Hernandes">
+					<button>
+						<img src="assets/images/pdf.svg">Baixe meu currículo!</img>
+					</button>
+					</a>
+					<a href="https://github.com/vmzHernandes" target="blank"><button><img src="assets/images/github.svg">Github</button></a>
+					<a href="https://www.linkedin.com/in/vitor-marra-hernandes-18039924b/" target="_blank"><button><img src="assets/images/linkedin.svg">Linkedin</button></a>
+					<a href="" target="blank"><button><img src="assets/images/email.svg">E-mail</button></a>			
+				</div>
+			</div>
+	</section>
+
+	<!-- Projetos -->
+	<section class="projetos">
+		<div class="div1-proj"><h1>Projetos</h1></div>
+			<div class="div2-proj"><img src="assets/images/cardex.png"></div>
+			<div class="div3-proj"><img src="assets/images/ppt.png"></div>
+			<div class="div4-proj"><img src="assets/images/spotify.png"></div>
+			<div class="div5-proj"><button>Ver mais</button></div>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		
+	</footer>
+	
+	<!-- Script JS -->
+	<script src="script.js"></script>
 </body>
 </html>
