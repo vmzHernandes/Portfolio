@@ -15,12 +15,24 @@ body {
     font-family: 'Outfit', sans-serif;
     color: var(--cinza);
 }
+@-webkit-keyframes rodar {
+    from {
+        rotate: 0deg;
+    }
+    50% {
+        scale: 1 1.5;
+    }
+    to {
+        rotate: 360deg;
+    }
+}
 @keyframes rodar {
     from {
         rotate: 0deg;
     }
     50% {
-        scale: 1 1.5;}
+        scale: 1 1.5;
+    }
     to {
         rotate: 360deg;
     }
@@ -35,6 +47,7 @@ body {
     translate: -50%-50%;
     border-radius: 50%;
     animation: rodar 20s infinite;
+    -webkit-animation: rodar 20s infinite;
     filter: blur(200px);
     z-index: -1;
 }
@@ -66,7 +79,7 @@ main {
 }
 .div2-main { grid-area: 1 / 2 / 3 / 3; } 
 .div2-main > img {
-    width: 50%;
+    width: 50vh;
     margin: auto;
     filter: invert(40%) sepia(99%) saturate(566%) hue-rotate(219deg) brightness(104%) contrast(101%);
 
@@ -105,7 +118,7 @@ a {
     color: var(--cinza);
     text-decoration: none;
 }
-a:hover {
+header a:hover {
     color: var(--roxo);
     border-bottom: 1px solid var(--roxo);
 }
@@ -171,13 +184,16 @@ a:hover {
     padding-left: 0;
     filter: invert(77%) sepia(12%) saturate(116%) hue-rotate(77deg) brightness(82%) contrast(89%);
 }
+.div3-sobre a:hover {
+    border-bottom: 1px solid var(--roxo);
+}
 
 /* Projetos */
 .projetos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    padding: 0rem 5rem;
+    padding: 0rem 5rem 5rem;
     gap: 2rem;
 }
 .projetos h1 {
@@ -189,12 +205,36 @@ font-size: var(--fs-pequeno);
     color: var(--roxo);
 }
 .div1-proj { 
-    grid-area: 1 / 1 / 2 / 3; 
+    grid-area: 1 / 1 / 2 / 3;
+}
+.div2-proj img {
+    border: 1px solid var(--cinza);
 }
 .div2-proj { grid-area: 2 / 1 / 4 / 2; }
 .div3-proj { grid-area: 2 / 2 / 4 / 3; }
+.div3-proj img {
+    border: 1px solid var(--cinza);
+}
 .div4-proj { grid-area: 4 / 1 / 6 / 2; }
+.div4-proj img {
+    border: 1px solid var(--cinza);
+}
 .div5-proj { grid-area: 4 / 2 / 6 / 3; } 
-.btn {
-    border: 1px solid var(--roxo);
+.div5-proj img {
+    border: 1px solid var(--cinza);
+}
+.link:hover {
+    transition: 0.3s ease-in-out;
+    opacity: 50%;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    background-color: var(--preto);
+    border-top: 1px solid var(--cinza);
 }
